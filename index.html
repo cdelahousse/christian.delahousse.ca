@@ -78,12 +78,12 @@ my home.                         |   ._----
 			<div id="links"> 
 				<ul>
 					<li class="email">
-						<a href="Just wait two seconds -- mailto:thisemail@isfor.thespambots" id="email" >
+						<a href="#Just wait two seconds -- mailto:thisemail@isfor.thespam.bots" id="email" >
 							E-mail
 						</a>
 					</li> 
 					<li class="resume">
-						<a href="" >
+						<a href="#" >
 							R&#233;sum&#233;
 						</a>
 					</li> 
@@ -134,12 +134,16 @@ my home.                         |   ._----
 					return String.fromCharCode(
 					(ch <= "Z" ? 90:122) >= (ch=ch.charCodeAt(0)+13) ?ch:ch-26);
 				}
-				function decode(s) { return s.split("").map(rot13).join(""); }
+				function decode(s) {
+					var st = s.split(""), i;
+					for (i=0;i<st.length;i++) st[i] = rot13(st[i]); 
+					return st.join("");
+				}
 
 				//The encoded email;
-				var e=decode("zzaapuevfgvnazzaa".slice(4,-4)) + "@" +
-						decode("zzaaqrynubhffrzzaa".slice(4,-4)) + "." + decode("pn")
-				, str=decode("zzaaznvygbzzaa".slice(4,-4)) + ":" + e;
+				var e=decode("zzaazzaapuevfgvnazzaa".slice(4,-4)) + "@" +
+						decode("zzaaqrynubhffrzzaa".slice(4,-4)) + "." + decode("pnzzaa")
+				, str=decode("zzaaznvygbzzaa".slice(4,-4)) + ":" + e.slice(4,-4);
 
 				//Set time out for the smart spambots who can run JS. I doubt they're patient
 				//enough to wait 2 seconds
@@ -164,5 +168,6 @@ my home.                         |   ._----
 		<!--Add attributions in copyright on bottom-->
 		<!--Make pdf of resume-->
 		<!-- Inline data uri my icons -->
+		<!-- Stack overflow link -->
     </body>
 </html>
