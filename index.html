@@ -83,7 +83,7 @@ my home.                         |   ._----
 						</a>
 					</li> 
 					<li class="resume">
-						<a href="#" >
+						<a href="/christian-delahousse-resume.pdf" >
 							R&#233;sum&#233;
 						</a>
 					</li> 
@@ -143,13 +143,13 @@ my home.                         |   ._----
 				//The encoded email;
 				var e=decode("zzaazzaapuevfgvnazzaa".slice(4,-4)) + "@" +
 						decode("zzaaqrynubhffrzzaa".slice(4,-4)) + "." + decode("pnzzaa")
-				, str=decode("zzaaznvygbzzaa".slice(4,-4)) + ":" + e.slice(4,-4);
+				, str=decode("zzaaznvygbzzaa".slice(4,-4)) + ":" + e.slice(-4);
 
 				//Set time out for the smart spambots who can run JS. I doubt they're patient
 				//enough to wait 2 seconds
 				w.setTimeout(function() {
 				 var a = d.getElementById("email");
-				 a.href=str;
+				 a.href=str.slice(4);
 				},2000);
 
 			})(document,window);
@@ -166,7 +166,6 @@ my home.                         |   ._----
 		<!--Convert to responsive design-->
 		<!--Convert black to dark gray-->
 		<!--Add attributions in copyright on bottom-->
-		<!--Make pdf of resume-->
 		<!-- Inline data uri my icons -->
 		<!-- Stack overflow link -->
     </body>
