@@ -218,6 +218,54 @@ textarea {
 	border-bottom-right-radius: 10px;
 	border-bottom: 3px solid #000;
 }
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 768px) {
+	#content {
+		width: 98%;
+		margin: 1%;
+		position: relative;
+		top:0;
+		left:0;
+	}
+}
+
+@media only screen
+and (max-width : 480px) {
+	#links li {
+		width: 50%;
+	}
+	#head h1,#lambda {
+		font-size: 2em;
+	}
+
+}
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 321px) {
+	#head h1, #lambda {
+		padding: 0 0 .3em;
+		font-size: 1.5em;
+	}
+	#description {
+		text-align: justify;
+		width: 100%;
+		font-size: 1em;
+		line-height: 1.4;
+	}
+	#head {
+		width: 100%;
+		text-align: center;
+		border-radius: 0;
+	}
+
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -306,15 +354,6 @@ textarea {
     *zoom: 1;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
 
 /* ==========================================================================
    Print styles.

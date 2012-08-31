@@ -57,7 +57,7 @@ my home.                         |   ._----
 		<title>Christian Delahousse</title>
 		<meta name="description" content="Christian Delahousse is curious and
 		hopefully interesting. He is a programmer, a web
-		developer, a lover of lambda and higher order functions">
+		developer, a lover of lambda and higher order functions.">
 		<meta name="viewport" content="width=device-width">
 
 		<link rel="stylesheet" href="css/normalize.css">
@@ -143,13 +143,13 @@ my home.                         |   ._----
 				//The encoded email;
 				var e=decode("zzaazzaapuevfgvnazzaa".slice(4,-4)) + "@" +
 						decode("zzaaqrynubhffrzzaa".slice(4,-4)) + "." + decode("pnzzaa")
-				, str=decode("zzaaznvygbzzaa".slice(4,-4)) + ":" + e.slice(-4);
+				, str=decode("zzaaznvygbzzaa".slice(4,-4)) + ":" + e.slice(4,-4);
 
 				//Set time out for the smart spambots who can run JS. I doubt they're patient
 				//enough to wait 2 seconds
 				w.setTimeout(function() {
 				 var a = d.getElementById("email");
-				 a.href=str.slice(4);
+				 a.href=str;
 				},2000);
 
 			})(document,window);
@@ -161,9 +161,8 @@ my home.                         |   ._----
 		</script>
 
 		<!-- TODO -->
-		<!--Google, webmaster tools -->
 		<!--optimise images -->
-		<!--Convert to responsive design-->
+		<!-- add favicon -->
 		<!--Convert black to dark gray-->
 		<!--Add attributions in copyright on bottom-->
 		<!-- Inline data uri my icons -->
