@@ -9,3 +9,5 @@ To update `index.html`:
 To update entire site:
 
     make all
+
+Please see `ATTRIBUTIONS.md` for a list of used graphic resources.
