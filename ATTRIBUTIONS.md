@@ -14,8 +14,11 @@ Graphic resources used for the site.
 * Blog icon
   http://thenounproject.com/noun/bullhorn/#icon-No1580
 
-* Code
+* Github icon
   http://thenounproject.com/noun/source-code/#icon-No1171
+
+* Stack Overflow Icon
+  http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png
 
 * Ascii Art
   http://www.chris.com/ASCII/index.php?art=objects/castles
