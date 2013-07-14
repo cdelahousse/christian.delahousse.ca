@@ -167,6 +167,9 @@ textarea {
 	background-image:  url('/img/icons/hackernews.png');
 }
 
+.deli a{
+	background-image:  url('/img/icons/deli.png');
+}
 
 #links li .effect {
 
@@ -227,5 +230,4 @@ and (max-width : 321px) {
 	}
 
 }
-
 
