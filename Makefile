@@ -12,7 +12,7 @@ all: upload-dirs upload-pages upload-index
 
 
 upload-dirs:
-	s3cmd put --recursive $(DIRS) s3://christian.delahousse.ca/;\
+	s3cmd --recursive put $(DIRS) s3://christian.delahousse.ca/
 
 
 upload-pages:
