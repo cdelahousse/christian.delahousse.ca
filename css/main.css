@@ -164,11 +164,19 @@ textarea {
 }
 
 .yc a{
-	background-image:  url('/img/icons/hackernews.png');
+	background-image:  url('/img/icons/yc.png');
 }
 
 .deli a{
 	background-image:  url('/img/icons/deli.png');
+}
+
+.so a{
+	background-image:  url('/img/icons/so.png');
+}
+
+.grds a{
+	background-image:  url('/img/icons/grds.png');
 }
 
 #links li .effect {
