@@ -75,9 +75,9 @@ my home.												 |	 ._----
 				</span> 
 			</div> 
 			<ul id="links"> 
-        If you can see this, then something is  wrong with your browser and
-        you should <a href="http://firefox.com">download</a> a better browser or
-        enable JavaScript;
+				If you can see this, then something is	wrong with your browser and
+				you should <a href="http://firefox.com">download</a> a better browser or
+				enable JavaScript;
 			</div> 
 
 		</div> 
@@ -97,6 +97,9 @@ my home.												 |	 ._----
 
 			(function (d,w) {
 
+				//********************
+				// Populate list links 
+				//********************
 				var links = [
 					{
 						id : "email",
@@ -160,23 +163,8 @@ my home.												 |	 ._----
 					}
 				];
 
-				//********************
-				// Populate list links 
-				//********************
 
-				function generateTemplate (tmplStr) {
-					return new Function(
-						"obj",
-						"with (obj) { return " + tmplStr + "}"
-					)
-				}
-
-				var tmplStr = d.getElementById('tmpl-list-item').innerHTML;
-				tmplStr = tmplStr.replace(/(\n+\s*)|(\s*$)/g, '');
-				tmplStr = tmplStr.replace(/\{\{\s*(\w+)\s*\}\}/g, "' + $1 + '");
-				tmplStr = "'" + tmplStr + "'";
-
-				var tmpl = generateTemplate(tmplStr);
+				var tmpl = generateTemplate("tmpl-list-item");
 
 				var linksHtml = links.reduce(function (p, c) {
 					return p + tmpl(c);
@@ -184,10 +172,40 @@ my home.												 |	 ._----
 
 				d.getElementById('links').innerHTML = linksHtml;
 
+				//*******************
+				// Decode email
+				//*******************
 
+				//The encoded email; Added a salt.
+				var e=decode("zzaazzaapuevfgvnazzaa".slice(4,-4)) + "@" +
+						decode("zzaaqrynubhffrzzaa".slice(4,-4)) + "." + decode("pnzzaa")
+				, str=decode("zzaaznvygbzzaa".slice(4,-4)) + ":" + e.slice(4,-4);
+
+				//Set time out for the smart spambots who can run JS. I doubt they're
+				//patient enough to wait 2 seconds
+				w.setTimeout(function() {
+				 var a = d.getElementById("email").firstChild;
+				 a.href=str;
+				},2000);
+
+
+				//**********************
+				// Template Generation
+				//**********************
+				function generateTemplate (tmplId) {
+					var tmplStr = d.getElementById(tmplId).innerHTML;
+					tmplStr = tmplStr.replace(/(\n+\s*)|(\s*$)/g, '');
+					tmplStr = tmplStr.replace(/\{\{\s*(\w+)\s*\}\}/g, "' + $1 + '");
+					tmplStr = "'" + tmplStr + "'";
+
+					return new Function(
+						"obj",
+						"with (obj) { return " + tmplStr + "}"
+					)
+				}
 
 				//**************************
-				//de-Obfuscate my email 
+				//de-Obfuscate email helpers
 				//**************************
 
 				//Rot13 decode this bitch
@@ -200,17 +218,6 @@ my home.												 |	 ._----
 					for (i=0;i<st.length;i++) st[i] = rot13(st[i]); 
 					return st.join("");
 				}
-				//The encoded email;
-				var e=decode("zzaazzaapuevfgvnazzaa".slice(4,-4)) + "@" +
-						decode("zzaaqrynubhffrzzaa".slice(4,-4)) + "." + decode("pnzzaa")
-				, str=decode("zzaaznvygbzzaa".slice(4,-4)) + ":" + e.slice(4,-4);
-
-				//Set time out for the smart spambots who can run JS. I doubt they're
-				//patient enough to wait 2 seconds
-				w.setTimeout(function() {
-				 var a = d.getElementById("email").firstChild;
-				 a.href=str;
-				},2000);
 
 				//**************************
 				// Google Analytics
