@@ -144,9 +144,14 @@ my home.                         |   ._----
 		<link 
 			href='http://fonts.googleapis.com/css?family=Belgrano|Open+Sans'
 			rel='stylesheet' type='text/css'>
+
 		<script> 
-			//Obfuscate this bidsnatch
+
 			(function (d,w) {
+
+        //**************************
+        //de-Obfuscate my email 
+        //**************************
 
 				//Rot13 decode this bitch
 				function rot13(ch){
@@ -158,7 +163,6 @@ my home.                         |   ._----
 					for (i=0;i<st.length;i++) st[i] = rot13(st[i]); 
 					return st.join("");
 				}
-
 				//The encoded email;
 				var e=decode("zzaazzaapuevfgvnazzaa".slice(4,-4)) + "@" +
 						decode("zzaaqrynubhffrzzaa".slice(4,-4)) + "." + decode("pnzzaa")
@@ -171,12 +175,29 @@ my home.                         |   ._----
 				 a.href=str;
 				},2000);
 
+
+        //*************************
+        //Populate list
+        //*************************
+        function genListItem(obj) {
+          var li = document.
+
+
+        }
+
+
+        
+        //**************************
+        // Google Analytics
+        //**************************
+        var _gaq=[['_setAccount','UA-12011654-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g,s)}(document,'script'));
+
+
 			})(document,window);
 			
-			var _gaq=[['_setAccount','UA-12011654-1'],['_trackPageview']];
-			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-				g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-				s.parentNode.insertBefore(g,s)}(document,'script'));
 		</script>
 
 		<!-- TODO -->
