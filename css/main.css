@@ -71,7 +71,6 @@ textarea {
 
 #content {
 	width: 45em;
-
 	position:absolute;
 	top: 30%;
 	left: 4%;
@@ -94,7 +93,6 @@ textarea {
 	padding: 0 .2em;
 	margin:0;
 	color: #888;
-
 	font-size: 3.5em;
 	line-height: 1;
 	text-align: center;
@@ -109,13 +107,10 @@ textarea {
 }
 
 #links {
-	padding-top: 1.5em;
-}
-#links ul {
+	padding:1.5em 0 0 0;
 	list-style-position: outside;
 	list-style-type: none;
 	margin:0;
-	padding:0;
 	float: left;
 }
 
@@ -133,49 +128,49 @@ textarea {
 }
 
 /*Icons*/
-.ll a{
+#ll a{
 	background-image:  url(/img/icons/ll.png);
 }
-.code a{
+#code a{
 	background-image:  url(/img/icons/code.png);
 }
 
-.f a{
+#f a{
 	background-image:  url(/img/icons/f.png);
 }
 
-.rd a{
+#rd a{
 	background-image:  url('/img/icons/rd.png');
 }
-.twt a{
+#twt a{
 	background-image:  url('/img/icons/twt.png');
 }
 
-.email a{
+#email a{
 	background-image:  url('/img/icons/email.png');
 }
 
-.resume a{
+#resume a{
 	background-image:  url('/img/icons/resume.png');
 }
 
-.blog a{
+#blog a{
 	background-image:  url('/img/icons/blog.png');
 }
 
-.yc a{
+#yc a{
 	background-image:  url('/img/icons/yc.png');
 }
 
-.deli a{
+#deli a{
 	background-image:  url('/img/icons/deli.png');
 }
 
-.so a{
+#so a{
 	background-image:  url('/img/icons/so.png');
 }
 
-.grds a{
+#grds a{
 	background-image:  url('/img/icons/grds.png');
 }
 
