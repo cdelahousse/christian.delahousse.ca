@@ -145,9 +145,57 @@ my home.                         |   ._----
 			href='http://fonts.googleapis.com/css?family=Belgrano|Open+Sans'
 			rel='stylesheet' type='text/css'>
 
+    <script type="text/prs.template" id="tmpl-list-item">
+      <li id="{{id}}">
+        <a href="{{href}}" >
+          {{text}}
+        </a>
+      </li> 
+    </script>
+
 		<script> 
 
 			(function (d,w) {
+
+        var links = [
+          {
+            id : "email",
+            href: "#Just wait two seconds -- mailto:thisemail@isfor.thespam.bots",
+            text: "E-mail"
+          },
+          {
+            id : "code",
+            href : "http://github.com/cdelahousse",
+            text : "GitHub"
+          }
+        ];
+
+        //********************
+        // Populate list links 
+        //********************
+
+        function generateTemplate (tmplStr) {
+          return new Function(
+            "obj",
+            "with (obj) { return " + tmplStr + "}"
+          )
+        }
+
+        var tmplStr = d.getElementById('tmpl-list-item').innerHTML;
+        tmplStr = tmplStr.replace(/(\n+\s*)|(\s*$)/g, '');
+        tmplStr = tmplStr.replace(/\{\{\s*(\w+)\s*\}\}/g, "' + $1 + '");
+        tmplStr = "'" + tmplStr +  "'";
+
+        var tmpl = generateTemplate(tmplStr);
+
+        var linksHtml = links.reduce(function (p, c) {
+          return p + tmpl(c);
+        }, "");
+        
+
+        d.getElementById('links').innerHTML = linksHtml;
+
+
 
         //**************************
         //de-Obfuscate my email 
@@ -175,18 +223,6 @@ my home.                         |   ._----
 				 a.href=str;
 				},2000);
 
-
-        //*************************
-        //Populate list
-        //*************************
-        function genListItem(obj) {
-          var li = document.
-
-
-        }
-
-
-        
         //**************************
         // Google Analytics
         //**************************
