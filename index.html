@@ -181,7 +181,6 @@ my home.												 |	 ._----
 				var linksHtml = links.reduce(function (p, c) {
 					return p + tmpl(c);
 				}, "");
-				
 
 				d.getElementById('links').innerHTML = linksHtml;
 
@@ -209,7 +208,7 @@ my home.												 |	 ._----
 				//Set time out for the smart spambots who can run JS. I doubt they're
 				//patient enough to wait 2 seconds
 				w.setTimeout(function() {
-				 var a = d.getElementById("email");
+				 var a = d.getElementById("email").firstChild;
 				 a.href=str;
 				},2000);
 
