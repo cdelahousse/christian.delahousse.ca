@@ -138,7 +138,7 @@
           return p + tmpl(c);
         }, "");
 
-        d.getElementById('links').innerHTML = linksHtml;
+        d.querySelector('#links').innerHTML = linksHtml;
 
         //*******************
         // Decode email
@@ -161,22 +161,25 @@
         // Template Generation
         //**********************
         function generateTemplate (tmplId) {
-          var tmplStr = d.getElementById(tmplId).innerHTML;
-          tmplStr = tmplStr.replace(/(\n+\s*)|(\s*$)/g, '');
-          tmplStr = tmplStr.replace(/\{\{\s*(\w+)\s*\}\}/g, "' + $1 + '");
-          tmplStr = "'" + tmplStr + "'";
+          var objName = "obj";
+          var tmplStr = "'"
+            + d.getElementById(tmplId).innerHTML //Get Source
+            .replace(/(\n+\s*)|(\s*$)/g, '') //Remove newlines
+            .replace(/\{\{\s*(\w+)\s*\}\}/g,
+                "' + " + objName + "." + "$1 + '") //replace placeholders
+            + "'";
 
           return new Function(
-            "obj",
-            "with (obj) { return " + tmplStr + "}"
-          )
+            objName,
+            "return " + tmplStr + ";"
+          );
         }
 
         //**************************
         //de-Obfuscate email helpers
         //**************************
 
-        //Rot13 decode this bitch
+        //Caesar cipher of +13
         function rot13(ch){
           return String.fromCharCode(
           (ch <= "Z" ? 90:122) >= (ch=ch.charCodeAt(0)+13) ?ch:ch-26);
