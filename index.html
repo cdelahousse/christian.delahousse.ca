@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
     <script type="text/javascript">
     /*
@@ -18,190 +18,190 @@
 
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Christian Delahousse</title>
-		<meta name="description" content="Christian Delahousse is curious and
-		hopefully interesting. He is a programmer, a web
+    <title>Christian Delahousse</title>
+    <meta name="description" content="Christian Delahousse is curious and
+    hopefully interesting. He is a programmer, a web
     developer, a lover of {Linu,Uni}x, lambdas and higher order functions.">
-		<meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
 
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="canonical" href="http://christian.delahousse.ca">
-	</head>
-	<body>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="canonical" href="http://christian.delahousse.ca">
+  </head>
+  <body>
 
-		<div id="content">
-			<div id="head">
-				<span id="lambda">&#955;</span>
-				<h1>Christian Delahousse</h1>
-				<span id="description">
-					A proud Computer Science student, a curious programmer, and a
-					passionate web developer. A lover of {Linu,Uni}x, lambdas, and higher
-					order functions. He lives in Ottawa, Canada.
-				</span> 
-			</div> 
-			<ul id="links"> 
-				<noscript>
-					If you can see this, then something is	wrong with your browser and
-					you should <a href="http://firefox.com">download</a> a better
-					browser or enable JavaScript;
-				</noscript>
-			</div> 
+    <div id="content">
+      <div id="head">
+        <span id="lambda">&#955;</span>
+        <h1>Christian Delahousse</h1>
+        <span id="description">
+          A proud Computer Science student, a curious programmer, and a
+          passionate web developer. A lover of {Linu,Uni}x, lambdas, and higher
+          order functions. He lives in Ottawa, Canada.
+        </span>
+      </div>
+      <ul id="links">
+        <noscript>
+          If you can see this, then something is  wrong with your browser and
+          you should <a href="http://firefox.com">download</a> a better
+          browser or enable JavaScript;
+        </noscript>
+      </div>
 
-		</div> 
-		<link 
-			href='http://fonts.googleapis.com/css?family=Belgrano|Open+Sans'
-			rel='stylesheet' type='text/css'>
+    </div>
+    <link
+      href='http://fonts.googleapis.com/css?family=Belgrano|Open+Sans'
+      rel='stylesheet' type='text/css'>
 
-		<script type="text/prs.template" id="tmpl-list-item">
-			<li id="{{id}}">
-				<a href="{{href}}" >
-					{{text}}
-				</a>
-			</li> 
-		</script>
+    <script type="text/prs.template" id="tmpl-list-item">
+      <li id="{{id}}">
+        <a href="{{href}}" >
+          {{text}}
+        </a>
+      </li>
+    </script>
 
-		<script> 
+    <script>
 
-			(function (d,w) {
+      (function (d,w) {
 
-				//********************
-				// Populate list links 
-				//********************
-				var links = [
-					{
-						id : "email",
-						href :"#Just wait two seconds -- mailto:thisemail@isfor.thespam.bots" ,
-						text :"E-mail"
-					},
-					{
-						id : "code",
-						href : "http://github.com/cdelahousse" ,
-						text : "GitHub"
-					},
-					{
-						id : "resume",
-						href : "/christian-delahousse-resume.pdf" ,
-						text : "R&#233;sum&#233;"
-					},
-					{
-						id : "blog",
-						href : "/blog" ,
-						text : "Blog"
-					},
-					{
-						id : "ll",
-						href : "http://ca.linkedin.com/in/delahousse" ,
-						text : "LinkedIn"
-					},
-					{
-						id : "so",
-						href : "http://stackoverflow.com/users/629999/christian-delahousse" ,
-						text : "Stack Overflow"
-					},
-					{
-						id : "f",
-						href : "http://www.facebook.com/delahousse/" ,
-						text : "Facebook"
-					},
-					{
-						id : "twt",
-						href : "http://twitter.com/cdelahousse" ,
-						text : "Twitter"
-					},
-					{
-						id : "yc",
-						href : "http://news.ycombinator.com/user?id=cdelahousse" ,
-						text : "Hacker News"
-					},
-					{
-						id : "rd",
-						href : "http://www.reddit.com/user/cdelahousse/" ,
-						text : "Reddit"
-					},
-					{
-						id : "deli",
-						href : "https://delicious.com/cdelahousse" ,
-						text : "Delicious"
-					},
-					{
-						id : "grds",
-						href : "http://www.goodreads.com/user/show/15903383-christian-delahousse" ,
-						text : "Good Reads"
-					}
-				];
-
-
-				var tmpl = generateTemplate("tmpl-list-item");
-
-				var linksHtml = links.reduce(function (p, c) {
-					return p + tmpl(c);
-				}, "");
-
-				d.getElementById('links').innerHTML = linksHtml;
-
-				//*******************
-				// Decode email
-				//*******************
-
-				//The encoded email; Added a salt.
-				var e=decode("zzaazzaapuevfgvnazzaa".slice(4,-4)) + "@" +
-						decode("zzaaqrynubhffrzzaa".slice(4,-4)) + "." + decode("pnzzaa")
-				, str=decode("zzaaznvygbzzaa".slice(4,-4)) + ":" + e.slice(4,-4);
-
-				//Set time out for the smart spambots who can run JS. I doubt they're
-				//patient enough to wait 2 seconds
-				w.setTimeout(function() {
-				 var a = d.getElementById("email").firstChild;
-				 a.href=str;
-				},2000);
+        //********************
+        // Populate list links
+        //********************
+        var links = [
+          {
+            id : "email",
+            href :"#Just wait two seconds -- mailto:thisemail@isfor.thespam.bots" ,
+            text :"E-mail"
+          },
+          {
+            id : "code",
+            href : "http://github.com/cdelahousse" ,
+            text : "GitHub"
+          },
+          {
+            id : "resume",
+            href : "/christian-delahousse-resume.pdf" ,
+            text : "R&#233;sum&#233;"
+          },
+          {
+            id : "blog",
+            href : "/blog" ,
+            text : "Blog"
+          },
+          {
+            id : "ll",
+            href : "http://ca.linkedin.com/in/delahousse" ,
+            text : "LinkedIn"
+          },
+          {
+            id : "so",
+            href : "http://stackoverflow.com/users/629999/christian-delahousse" ,
+            text : "Stack Overflow"
+          },
+          {
+            id : "f",
+            href : "http://www.facebook.com/delahousse/" ,
+            text : "Facebook"
+          },
+          {
+            id : "twt",
+            href : "http://twitter.com/cdelahousse" ,
+            text : "Twitter"
+          },
+          {
+            id : "yc",
+            href : "http://news.ycombinator.com/user?id=cdelahousse" ,
+            text : "Hacker News"
+          },
+          {
+            id : "rd",
+            href : "http://www.reddit.com/user/cdelahousse/" ,
+            text : "Reddit"
+          },
+          {
+            id : "deli",
+            href : "https://delicious.com/cdelahousse" ,
+            text : "Delicious"
+          },
+          {
+            id : "grds",
+            href : "http://www.goodreads.com/user/show/15903383-christian-delahousse" ,
+            text : "Good Reads"
+          }
+        ];
 
 
-				//**********************
-				// Template Generation
-				//**********************
-				function generateTemplate (tmplId) {
-					var tmplStr = d.getElementById(tmplId).innerHTML;
-					tmplStr = tmplStr.replace(/(\n+\s*)|(\s*$)/g, '');
-					tmplStr = tmplStr.replace(/\{\{\s*(\w+)\s*\}\}/g, "' + $1 + '");
-					tmplStr = "'" + tmplStr + "'";
+        var tmpl = generateTemplate("tmpl-list-item");
 
-					return new Function(
-						"obj",
-						"with (obj) { return " + tmplStr + "}"
-					)
-				}
+        var linksHtml = links.reduce(function (p, c) {
+          return p + tmpl(c);
+        }, "");
 
-				//**************************
-				//de-Obfuscate email helpers
-				//**************************
+        d.getElementById('links').innerHTML = linksHtml;
 
-				//Rot13 decode this bitch
-				function rot13(ch){
-					return String.fromCharCode(
-					(ch <= "Z" ? 90:122) >= (ch=ch.charCodeAt(0)+13) ?ch:ch-26);
-				}
-				function decode(s) {
-					var st = s.split(""), i;
-					for (i=0;i<st.length;i++) st[i] = rot13(st[i]); 
-					return st.join("");
-				}
+        //*******************
+        // Decode email
+        //*******************
 
-				//**************************
-				// Google Analytics
-				//**************************
-				var _gaq=[['_setAccount','UA-12011654-1'],['_trackPageview']];
-				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-					g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-					s.parentNode.insertBefore(g,s)}(document,'script'));
+        //The encoded email; Added a salt.
+        var e=decode("zzaazzaapuevfgvnazzaa".slice(4,-4)) + "@" +
+            decode("zzaaqrynubhffrzzaa".slice(4,-4)) + "." + decode("pnzzaa")
+        , str=decode("zzaaznvygbzzaa".slice(4,-4)) + ":" + e.slice(4,-4);
 
-			})(document,window);
-			
-		</script>
+        //Set time out for the smart spambots who can run JS. I doubt they're
+        //patient enough to wait 2 seconds
+        w.setTimeout(function() {
+         var a = d.getElementById("email").firstChild;
+         a.href=str;
+        },2000);
 
-		<!-- TODO -->
-		<!--optimise images -->
-		<!--Add attributions in copyright on bottom-->
-		<!-- Inline data uri my icons -->
-		</body>
+
+        //**********************
+        // Template Generation
+        //**********************
+        function generateTemplate (tmplId) {
+          var tmplStr = d.getElementById(tmplId).innerHTML;
+          tmplStr = tmplStr.replace(/(\n+\s*)|(\s*$)/g, '');
+          tmplStr = tmplStr.replace(/\{\{\s*(\w+)\s*\}\}/g, "' + $1 + '");
+          tmplStr = "'" + tmplStr + "'";
+
+          return new Function(
+            "obj",
+            "with (obj) { return " + tmplStr + "}"
+          )
+        }
+
+        //**************************
+        //de-Obfuscate email helpers
+        //**************************
+
+        //Rot13 decode this bitch
+        function rot13(ch){
+          return String.fromCharCode(
+          (ch <= "Z" ? 90:122) >= (ch=ch.charCodeAt(0)+13) ?ch:ch-26);
+        }
+        function decode(s) {
+          var st = s.split(""), i;
+          for (i=0;i<st.length;i++) st[i] = rot13(st[i]);
+          return st.join("");
+        }
+
+        //**************************
+        // Google Analytics
+        //**************************
+        var _gaq=[['_setAccount','UA-12011654-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g,s)}(document,'script'));
+
+      })(document,window);
+
+    </script>
+
+    <!-- TODO -->
+    <!--optimise images -->
+    <!--Add attributions in copyright on bottom-->
+    <!-- Inline data uri my icons -->
+    </body>
 </html>
