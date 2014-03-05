@@ -1,0 +1,18 @@
+#Configuration file
+
+#Directory from which the script will read blog entries
+input_directory=./blog_content/content/
+
+#Directory to which the script will output blog entries
+output_directory=./blog/
+
+#Where to look for static resources
+static_assets_directory=./blog_content/static/
+
+#Where to look for templates
+templates_directory=./blog_content/templates/
+
+#Header and footers (in the template) used to build pages
+header_file=header.html
+footer_file=footer.html
+

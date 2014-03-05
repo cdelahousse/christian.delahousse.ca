@@ -3,40 +3,40 @@ button,
 input,
 select,
 textarea {
-    color: #333745;
+  color: #333745;
 }
 
 body {
-	font: normal 1em/1.4 'Open Sans', sans-serif;
-		background: #efefef 
+  font: normal 1em/1.4 'Open Sans', sans-serif;
+  background: #efefef 
 }
 
 a {
-		color: #06e;
-		text-decoration: none;
+  color: #06e;
+  text-decoration: none;
 }
 
 a:visited {
-	color: #662b9b;
+  color: #662b9b;
 }
 
 a:hover {
-	color: #00c;
+  color: #00c;
 }
 
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -44,7 +44,7 @@ hr {
  */
 
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
@@ -52,9 +52,9 @@ img {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -62,175 +62,199 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
 
 #content {
-	width: 45em;
-	position:absolute;
-	top: 30%;
-	left: 4%;
+  width: 45em;
+  position:absolute;
+  top: 30%;
+  left: 4%;
 }
 
 #head {
-	border-bottom: 3px solid #888;
-	padding-bottom: .7em;
-	border-bottom-right-radius: 40px;
+  border-bottom: 3px solid #888;
+  padding-bottom: .7em;
+  border-bottom-right-radius: 40px;
 }
 
 #head h1 {
-	display: inline-block;
-	margin:0;
-	font-size: 3em;
+  display: inline-block;
+  margin:0;
+  font-size: 3em;
 }
 
 #lambda {
-	display:inline-block;
-	padding: 0 .2em;
-	margin:0;
-	color: #888;
-	font-size: 3.5em;
-	line-height: 1;
-	text-align: center;
+  display:inline-block;
+  padding: 0 .2em;
+  margin:0;
+  color: #888;
+  font-size: 3.5em;
+  line-height: 1;
+  text-align: center;
 }
 
 #description {
-	clear:left;
-	display:block;
-	line-height: 1.4;
-	font-size: .9em;
-	width: 95%; /*For rounded corner*/
+  clear:left;
+  display:block;
+  line-height: 1.4;
+  font-size: .9em;
+  width: 95%; /*For rounded corner*/
 }
 
 #links {
-	padding:1.5em 0 0 0;
-	list-style-position: outside;
-	list-style-type: none;
-	margin:0;
-	float: left;
+  padding:1.5em 0 0 0;
+  list-style-position: outside;
+  list-style-type: none;
+  margin:0;
+  float: left;
 }
 
 #links li{
-	float:left;
-	width: 33%;
+  float:left;
+  width: 33%;
 }
 #links li a {
-	background-repeat:no-repeat;
-	background-position: left center;
-	line-height: 3;
-	padding-left:3em;
-	display:block;
+  background-repeat:no-repeat;
+  background-position: left center;
+  line-height: 3;
+  padding-left:3em;
+  display:block;
 
 }
 
 /*Icons*/
 #ll a{
-	background-image:  url(/img/icons/ll.png);
+  background-image:  url(/img/icons/ll.png);
 }
 #code a{
-	background-image:  url(/img/icons/code.png);
+  background-image:  url(/img/icons/code.png);
 }
 
 #f a{
-	background-image:  url(/img/icons/f.png);
+  background-image:  url(/img/icons/f.png);
 }
 
 #rd a{
-	background-image:  url('/img/icons/rd.png');
+  background-image:  url('/img/icons/rd.png');
 }
 #twt a{
-	background-image:  url('/img/icons/twt.png');
+  background-image:  url('/img/icons/twt.png');
 }
 
 #email a{
-	background-image:  url('/img/icons/email.png');
+  background-image:  url('/img/icons/email.png');
 }
 
 #resume a{
-	background-image:  url('/img/icons/resume.png');
+  background-image:  url('/img/icons/resume.png');
 }
 
-#blog a{
-	background-image:  url('/img/icons/blog.png');
+#bl a{
+  background-image:  url('/img/icons/blog.png');
 }
 
 #yc a{
-	background-image:  url('/img/icons/yc.png');
+  background-image:  url('/img/icons/yc.png');
 }
 
 #deli a{
-	background-image:  url('/img/icons/deli.png');
+  background-image:  url('/img/icons/deli.png');
 }
 
 #so a{
-	background-image:  url('/img/icons/so.png');
+  background-image:  url('/img/icons/so.png');
 }
 
 #grds a{
-	background-image:  url('/img/icons/grds.png');
+  background-image:  url('/img/icons/grds.png');
 }
 
 #links li .effect {
 
-	display:block;
-	position:absolute;
-	right: 0;
-	bottom: 0;
+  display:block;
+  position:absolute;
+  right: 0;
+  bottom: 0;
 
-	width: 4em;
-	height: 1em;
-	border-bottom-right-radius: 10px;
-	border-bottom: 3px solid #000;
+  width: 4em;
+  height: 1em;
+  border-bottom-right-radius: 10px;
+  border-bottom: 3px solid #000;
 }
+
 /* ==========================================================================
-   Media Queries for Responsive Design.
-   ========================================================================== */
+Blog
+========================================================================== */
+
+#blog #content {
+  position: relative;
+  width: 45em;
+}
+
+/* Shitty name */
+#blog #actual-blog-content {
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+
+#blog #head {
+  margin-bottom: 2em;
+}
+
+#blog #entry-listing a {
+  display: block;
+}
+
+/* ==========================================================================
+Media Queries for Responsive Design.
+========================================================================== */
 
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (max-width : 768px) {
-	#content {
-		width: 98%;
-		margin: 1%;
-		position: relative;
-		top:0;
-		left:0;
-	}
+  #content {
+    width: 98%;
+    margin: 1%;
+    position: relative;
+    top:0;
+    left:0;
+  }
 }
 
 @media only screen
 and (max-width : 480px) {
-	#links li {
-		width: 50%;
-	}
-	#head h1,#lambda {
-		font-size: 2em;
-	}
+  #links li {
+    width: 50%;
+  }
+  #head h1,#lambda {
+    font-size: 2em;
+  }
 
 }
 /* Smartphones (portrait) ----------- */
 @media only screen
 and (max-width : 321px) {
-	#head h1, #lambda {
-		padding: 0 0 .3em;
-		font-size: 1.5em;
-	}
-	#description {
-		text-align: justify;
-		width: 100%;
-		font-size: 1em;
-		line-height: 1.4;
-	}
-	#head {
-		width: 100%;
-		text-align: center;
-		border-radius: 0;
-	}
+  #head h1, #lambda {
+    padding: 0 0 .3em;
+    font-size: 1.5em;
+  }
+  #description {
+    text-align: justify;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  #head {
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+  }
 
 }
 
